@@ -1,6 +1,6 @@
 # React typescript boilerplate
 
----
+[![Build Status](https://travis-ci.org/fifthbeat/react-typescript-boilerplate.svg?branch=master)](https://travis-ci.org/fifthbeat/react-typescript-boilerplate)
 
 ## How to
 
