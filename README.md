@@ -1,6 +1,8 @@
 # React typescript boilerplate
 
 [![Build Status](https://travis-ci.org/fifthbeat/react-typescript-boilerplate.svg?branch=master)](https://travis-ci.org/fifthbeat/react-typescript-boilerplate)
+[![Maintainability](https://api.codeclimate.com/v1/badges/31a6d0abf11533eae4ca/maintainability)](https://codeclimate.com/github/fifthbeat/react-typescript-boilerplate/maintainability)
+[![Dependencies](https://david-dm.org/fifthbeat/react-typescript-boilerplate.svg)](https://david-dm.org/fifthbeat/react-typescript-boilerplate)
 
 ## How to
 
