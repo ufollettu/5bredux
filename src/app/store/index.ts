@@ -25,12 +25,5 @@ export function configureStore(initialState?: GlobalState): Store<GlobalState> {
     sagaMiddleware.run(saga);
   }
 
-  // if (module.hot) {
-  //   module.hot.accept('app/store', () => {
-  //     const nextReducer = require('app/store');
-  //     store.replaceReducer(nextReducer);
-  //   });
-  // }
-
   return store;
 }

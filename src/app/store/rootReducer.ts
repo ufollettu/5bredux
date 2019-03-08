@@ -1,11 +1,9 @@
 import {combineReducers} from 'redux';
 
-import userReducer, {UserState} from './User';
+import initReducer, {InitState} from './Init';
 
 export interface GlobalState {
-  user: UserState;
+  init: InitState;
 }
 
-export default combineReducers<GlobalState>({
-  user: userReducer,
-});
+export default combineReducers<GlobalState>({init: initReducer});

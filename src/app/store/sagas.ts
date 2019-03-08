@@ -1,6 +1,6 @@
-import {sagas as userSagas} from './User';
+import {sagas as initSagas} from './Init';
 
 export default [
   // NOTE: needs to be one line per store
-  userSagas
+  initSagas
 ];
