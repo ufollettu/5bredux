@@ -19,6 +19,9 @@
     "generate": "plop --plopfile internals/generators/index.js",
     "lint": "tslint -c tslint.json --fix './src/app/**.tsx' -t verbose"
   },
+  "engines": {
+    "node": "11.x"
+  },
   "pre-commit": {
     "colors": true,
     "silent": false,
