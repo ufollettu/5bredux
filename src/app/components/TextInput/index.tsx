@@ -3,7 +3,7 @@ import * as React from 'react';
 import {Wrap} from './styles';
 
 type Props = {};
-type State = {
+type State = CardType & {
   value: string;
   error: boolean;
 };
