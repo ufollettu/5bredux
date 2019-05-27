@@ -1,7 +1,9 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
 
+import CardsManager from '../../components/CardsManager';
 import TextInput from '../../components/TextInput';
+
 import {GlobalState} from '../../store/rootReducer';
 
 import {Wrap} from './styles';
@@ -20,7 +22,10 @@ class Home extends React.Component<Props, State> {
   render() {
     return (
       <Wrap>
+        <h1>Text input example</h1>
         <TextInput />
+        <h1>Card example</h1>
+        <CardsManager />
       </Wrap>
     );
   }

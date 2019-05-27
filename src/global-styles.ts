@@ -7,17 +7,12 @@ export const GlobalStyle = createGlobalStyle`
 
   html,
   body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background: ${colors.white};
     background-size: cover;
     display: flex;
     justify-content: space-around;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 16px;
 
     * {

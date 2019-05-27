@@ -3,6 +3,10 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  },
   mode: 'development',
   // https://webpack.js.org/configuration/devtool/
   devtool: 'cheap-module-eval-source-map',
