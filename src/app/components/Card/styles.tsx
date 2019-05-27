@@ -62,7 +62,7 @@ export const Wrap = styled.div`
     border: 1px solid ${colors.mediumGray};
   }
 
-  & > section {
+  & > footer {
     border: 1px solid ${colors.mediumGray};
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -84,7 +84,7 @@ export const Wrap = styled.div`
           `}
   }
 
-  & > section > button {
+  & > footer > button {
     position: absolute;
     top: -24px;
     left: 12px;
@@ -142,7 +142,7 @@ export const Wrap = styled.div`
           `}
   }
 
-  & > section > h2 {
+  & > footer > h2 {
     background-color: ${colors.mediumGray};
     color: ${colors.darkGray};
 
@@ -169,13 +169,13 @@ export const Wrap = styled.div`
           `}
   }
 
-  & > section > .authors,
-  & > section > .tags,
-  & > section > p {
+  & > footer > .authors,
+  & > footer > .tags,
+  & > footer > p {
     margin: 12px 0 0 0;
   }
 
-  & > section > .tags > span {
+  & > footer > .tags > span {
     display: inline-flex;
     font-size: 16px;
     color: ${colors.darkGray};
@@ -183,14 +183,14 @@ export const Wrap = styled.div`
     line-height: 1.2;
   }
 
-  & > section > .authors {
+  & > footer > .authors {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
     text-overflow: ellipsis;
   }
 
-  & > section > .authors > span {
+  & > footer > .authors > span {
     font-size: 14px;
     color: ${colors.darkGray};
     letter-spacing: 0.17px;
@@ -198,15 +198,15 @@ export const Wrap = styled.div`
     font-weight: 600;
   }
 
-  & > section > .hidden_content {
+  & > footer > .hidden_content {
     margin: 24px 0 0 0;
   }
 
-  & > section > .hidden_content > ul {
+  & > footer > .hidden_content > ul {
     list-style: none;
   }
 
-  & > section > .hidden_content > ul > li {
+  & > footer > .hidden_content > ul > li {
     margin: 12px 0;
     display: flex;
     flex-direction: row;

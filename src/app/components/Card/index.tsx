@@ -49,7 +49,7 @@ export default class Card extends React.Component<Props, State> {
           </span>
         </header>
         <img alt={titolo} src={img} />
-        <section>
+        <footer>
           <button onClick={this.handleCardOpen}>Risorse</button>
           <h2>{titolo}</h2>
           <div className="tags">{this.renderStringArray(tags)}</div>
@@ -69,7 +69,7 @@ export default class Card extends React.Component<Props, State> {
               <li>ZTE</li>
             </ul>
           </div>
-        </section>
+        </footer>
       </Wrap>
     );
   }
