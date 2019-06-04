@@ -15,7 +15,7 @@ export const isCancelled = (error: object) => {
 export const http = axios.create({
   baseURL: API_URL,
   headers: {
-    Accept: 'application/json',
+    'Accept': 'application/json',
     'Content-Type': 'application/json'
   }
 });
@@ -54,6 +54,7 @@ export const get = async (url: string, options: object) =>
       ...options
     })
     .then((response) => {
+      // console.log('success', response);
       return response.data;
     })
     .catch((error) => {

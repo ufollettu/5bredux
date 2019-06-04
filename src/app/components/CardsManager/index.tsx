@@ -1,11 +1,13 @@
 import {CardBean} from 'beans/index';
 import * as React from 'react';
 
-import * as cards from '../../../assets/data/cardsData.json';
+// import * as cards from '../../../assets/data/cardsData.json';
 import Card from '../Card';
 
 import {Wrap} from './styles';
-type Props = {};
+type Props = {
+  cards: CardBean[];
+};
 type State = {};
 
 export default class CardsManager extends React.Component<Props, State> {
@@ -16,8 +18,7 @@ export default class CardsManager extends React.Component<Props, State> {
   }
 
   render(): JSX.Element {
-    const {data} = cards;
-    console.log(data);
-    return <Wrap>{this.renderCardComponent(data)}</Wrap>;
+    const {cards} = this.props;
+    return <Wrap>{this.renderCardComponent(cards)}</Wrap>;
   }
 }
