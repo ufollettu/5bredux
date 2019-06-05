@@ -1,23 +1,54 @@
+import {CardsInit, cardsInit} from 'app/store/Cards';
+import {GlobalState} from 'app/store/rootReducer';
 import {CardBean} from 'beans/index';
 import * as React from 'react';
+import {connect} from 'react-redux';
+import {Dispatch} from 'redux';
 
-import * as cards from '../../../assets/data/cardsData.json';
 import Card from '../Card';
 
 import {Wrap} from './styles';
-type Props = {};
+
+type Props = {
+  cardsInit: () => CardsInit;
+  cards: null | CardBean[];
+};
+
 type State = {};
 
-export default class CardsManager extends React.Component<Props, State> {
+class CardsManager extends React.Component<Props, State> {
   public readonly state: State = {};
+
+  componentDidMount() {
+    const {cardsInit} = this.props;
+    cardsInit();
+  }
 
   renderCardComponent(cards: CardBean[]): JSX.Element[] {
     return cards.map((card: CardBean): JSX.Element => <Card key={card.id} {...card} />);
   }
 
   render(): JSX.Element {
-    const {data} = cards;
-    console.log(data);
-    return <Wrap>{this.renderCardComponent(data)}</Wrap>;
+    const {cards} = this.props;
+    console.log(cards);
+    if (!cards) return <div />;
+    return <Wrap>{this.renderCardComponent(cards)}</Wrap>;
   }
 }
+
+function mapStateToProps(state: GlobalState) {
+  return {
+    cards: state.cards.data
+  };
+}
+
+function mapDispatchToProps(dispatch: Dispatch) {
+  return {
+    cardsInit: () => dispatch(cardsInit())
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CardsManager);
