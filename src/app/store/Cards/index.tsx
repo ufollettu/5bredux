@@ -85,9 +85,7 @@ export default (state: CardsState = initialState, action: CardsAction): CardsSta
         ...state,
         loading: false,
         loaded: true,
-        data: {
-          ...action.cards
-        }
+        data: action.cards
       };
     case CardsActionEnum.FAIL:
       return {

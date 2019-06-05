@@ -30,8 +30,8 @@ class CardsManager extends React.Component<Props, State> {
 
   render(): JSX.Element {
     const {cards} = this.props;
-    console.log(cards);
     if (!cards) return <div />;
+
     return <Wrap>{this.renderCardComponent(cards)}</Wrap>;
   }
 }
