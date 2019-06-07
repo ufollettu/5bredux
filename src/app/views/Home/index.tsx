@@ -5,14 +5,14 @@ import {Dispatch} from 'redux';
 
 import CardsManager from '../../components/CardsManager';
 import TextInput from '../../components/TextInput';
-import {homeInit} from '../../store/Init';
+import {homeInit, InitInit} from '../../store/Init';
 import {GlobalState} from '../../store/rootReducer';
 
 import {Wrap} from './styles';
 
 type Props = {
   cards: CardBean[];
-  handleHomeInit: any;
+  handleHomeInit: () => InitInit;
 };
 
 type State = {};
