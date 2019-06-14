@@ -79,6 +79,7 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^4.3.1",
+    "@types/redux-logger": "^3.0.7",
     "@types/redux-saga": "^0.10.5",
     "@types/reselect": "^2.2.0",
     "@types/styled-components": "^4.0.2",
@@ -91,6 +92,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
     "redux-saga": "^1.0.2",
     "reselect": "^4.0.0",
     "styled-components": "^4.0.2"

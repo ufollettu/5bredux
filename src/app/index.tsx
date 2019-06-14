@@ -1,5 +1,5 @@
 import {Action, Location} from 'history';
-import createHistory from 'history/createHashHistory';
+import {createHashHistory} from 'history';
 import * as React from 'react';
 import {connect} from 'react-redux';
 import {Route, Switch} from 'react-router';
@@ -9,7 +9,7 @@ import {Dispatch} from 'redux';
 import Home from './views/Home';
 
 import {GlobalState} from './store/rootReducer';
-const history = createHistory();
+const history = createHashHistory();
 
 type Props = {};
 
